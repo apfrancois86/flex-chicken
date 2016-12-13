@@ -1,0 +1,125 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px; }
+
+.nav {
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #DDD; }
+  .nav .nav-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center; }
+    .nav .nav-container div {
+      display: flex;
+      justify-content: space-between;
+      height: 35px;
+      align-items: center; }
+    .nav .nav-container div:first-of-type h4 {
+      border-right: 1px solid #DDD; }
+  .nav h4 {
+    background-color: white;
+    font-size: 12px;
+    padding: 10px; }
+
+.search-container {
+  font-family: 'Teko', sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  height: 60px;
+  margin: 0 20px; }
+  .search-container .searchbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .search-container .searchbar .left-search {
+      display: flex;
+      justify-content: flex-start; }
+    .search-container .searchbar .center-search {
+      display: flex;
+      justify-content: center; }
+      .search-container .searchbar .center-search h3 {
+        margin: 0 20px; }
+    .search-container .searchbar .right-search {
+      display: flex;
+      justify-content: flex-end; }
+      .search-container .searchbar .right-search input {
+        height: 30px;
+        width: 150px; }
+
+.container {
+  height: 600px;
+  position: relative; }
+  .container div {
+    position: absolute;
+    width: 300px;
+    top: 5%;
+    left: 5%; }
+    .container div h2 {
+      font-family: 'Teko', sans-serif;
+      font-size: 2.5em; }
+    .container div p {
+      margin-bottom: 20px; }
+    .container div a {
+      background-color: white;
+      text-decoration: none;
+      border-radius: 2px;
+      font-family: 'Teko', sans-serif;
+      font-size: 1.5em;
+      padding: 5px;
+      color: black; }
+  .container img {
+    width: 100%;
+    margin-bottom: 20px; }
+
+/*# sourceMappingURL=application.css.map */

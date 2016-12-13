@@ -1,0 +1,13 @@
+@mixin resizeimage {
+  height: 280px;
+  width: 280px;
+  object-fit: cover;
+}
+@mixin search ($width, $height:50px) {
+  display: flex;
+  width: $width;
+  height: $height;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+}
