@@ -47,9 +47,11 @@ table {
 
 body {
   font-family: 'Lato', sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  background-color: #191919; }
 
 .nav {
+  background-color: white;
   height: 35px;
   display: flex;
   justify-content: space-between;
@@ -72,11 +74,12 @@ body {
     padding: 10px; }
 
 .search-container {
+  background-color: white;
   font-family: 'Teko', sans-serif;
   text-transform: uppercase;
   display: flex;
   height: 60px;
-  margin: 0 20px; }
+  padding: 0 20px; }
   .search-container .searchbar {
     width: 100%;
     display: flex;
@@ -98,13 +101,21 @@ body {
         width: 150px; }
 
 .container {
-  height: 600px;
-  position: relative; }
+  height: 900px;
+  position: relative;
+  background: url(../img/chicken.jpg);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
   .container div {
     position: absolute;
     width: 300px;
     top: 5%;
-    left: 5%; }
+    left: 5%;
+    transition: all 5s; }
+    .container div:hover {
+      transform: rotate(1080deg); }
     .container div h2 {
       font-family: 'Teko', sans-serif;
       font-size: 2.5em; }
@@ -121,5 +132,28 @@ body {
   .container img {
     width: 100%;
     margin-bottom: 20px; }
+
+.footer {
+  background-color: #191919;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  max-width: 1000px;
+  margin: 0 auto; }
+  .footer div {
+    display: flex;
+    margin: 15px 25px 0 0; }
+    .footer div div {
+      flex-direction: column;
+      line-height: 2em; }
+      .footer div div h5 {
+        font-family: 'Teko', sans-serif; }
+      .footer div div h6 {
+        color: #8e8e8e;
+        font-size: 0.8em; }
+  .footer .rightfoot {
+    flex-direction: column;
+    text-align: right; }
 
 /*# sourceMappingURL=application.css.map */
